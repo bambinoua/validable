@@ -1,0 +1,1 @@
+enum EnumProp { indx, name }

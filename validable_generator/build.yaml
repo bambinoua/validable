@@ -1,0 +1,54 @@
+targets:
+  $default:
+    # sources:
+    #   exclude:
+    #     - lib/*.dart
+    #     - lib/src/*.dart
+    builders:
+      enum_extractor:
+        enabled: true
+        generate_for:
+          - lib/example/domain/*.dart
+      # constraint_builder:
+      #   enabled: false
+      #   generate_for:
+      #     - lib/example/domain/*.dart
+      #   options: {}
+
+builders:
+  enum_extractor:
+    import: "package:validable_generator/builder.dart"
+    builder_factories: 
+      - enumExtractBuilder
+    build_extensions: {
+      ".dart": [".enum_extract.json"]
+    }
+    auto_apply: dependents
+    build_to: cache
+  # constraint_builder:
+  #   import: "package:validable_generator/builder.dart"
+  #   builder_factories:
+  #     - validationConstraintBuilder
+  #   build_extensions: {
+  #     ".dart": [".constraints.dart"]
+  #   }
+  #   auto_apply: dependents
+  #   build_to: source
+#    applies_builders:
+#      - temporary_file_cleanup
+
+#post_process_builders:
+#  temporary_file_cleanup:
+#    import: "package:validable_generator/builder.dart"
+#    builder_factory: tempraryFileCleanup
+#    defaults:
+#      release_options:
+#        enabled: true
+
+#  config_builder:
+#    import: "package:validable_generator/builder.dart"
+#    builder_factories: ["validationRepositoryBuilder"]
+#    build_extensions: {".dart": [".repository.dart"]}
+#    auto_apply: dependents
+#    build_to: source
+#    defaults:

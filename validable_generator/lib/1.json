@@ -1,0 +1,129 @@
+[
+  {
+    "name": "Animal",
+    "path": "package:validable/example/domain/enums.dart",
+    "comment": "/// Animals.",
+    "members": [
+      {
+        "name": "dog",
+        "meta": "_name = String ('dog'); id = int (1); index = int (0)",
+        "properties": [
+          {
+            "name": "id",
+            "type": "int",
+            "value": "1"
+          },
+          {
+            "name": "index",
+            "type": "int",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "name": "cat",
+        "meta": "_name = String ('cat'); id = int (2); index = int (1)",
+        "properties": [
+          {
+            "name": "id",
+            "type": "int",
+            "value": "2"
+          },
+          {
+            "name": "index",
+            "type": "int",
+            "value": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Entities",
+    "path": "package:validable/example/domain/enums.dart",
+    "comment": "/// Entities.",
+    "members": [
+      {
+        "name": "customer",
+        "meta": "_name = String ('customer'); code = String ('cus'); index = int (0)",
+        "properties": [
+          {
+            "name": "code",
+            "type": "String",
+            "value": "'cus'"
+          },
+          {
+            "name": "index",
+            "type": "int",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "name": "product",
+        "meta": "_name = String ('product'); code = String ('pro'); index = int (1)",
+        "properties": [
+          {
+            "name": "code",
+            "type": "String",
+            "value": "'pro'"
+          },
+          {
+            "name": "index",
+            "type": "int",
+            "value": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Classes",
+    "path": "package:validable/example/domain/enums.dart",
+    "comment": "/// Classes.",
+    "members": [
+      {
+        "name": "customer",
+        "meta": "_name = String ('customer'); code = String ('cus'); id = int (1); index = int (0)",
+        "properties": [
+          {
+            "name": "code",
+            "type": "String",
+            "value": "'cus'"
+          },
+          {
+            "name": "id",
+            "type": "int",
+            "value": "1"
+          },
+          {
+            "name": "index",
+            "type": "int",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "name": "product",
+        "meta": "_name = String ('product'); code = String ('pro'); id = int (2); index = int (1)",
+        "properties": [
+          {
+            "name": "code",
+            "type": "String",
+            "value": "'pro'"
+          },
+          {
+            "name": "id",
+            "type": "int",
+            "value": "2"
+          },
+          {
+            "name": "index",
+            "type": "int",
+            "value": "1"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+name: validable
+description: Validable is a convenient code generator for makinig validations. Inspired by Java Beans validations.
+version: 0.0.1
+homepage: https://github.com/bambinoua/validable
+publish_to: none
+
+environment:
+  sdk: ^3.6.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  meta: ^1.16.0
+  validable_generator: 
+    path: ../validable_generator
+
+
+dev_dependencies:
+  build_runner: ^2.4.15
+  build_test: ^2.2.3
+  build_web_compilers: any
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  
